@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" class="riten-res">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark-subtle p-0">
+
+    <!-- navbar -->
+    <nav class="navbar bg-body-tertiary p-0 d-flex">
+        <div class="container-fluid bg-secondary p-2">
+            <a class="navbar-brand text-light ps-5 fs-4" href="#">
+                <img src="logo.jpg" alt="Logo" width="40" height="34" class="d-inline-block align-text-top ">
+                Weather 99
+            </a>
+            <button class="btn btn-secondary fs-6 riten-nav" onClick="window.location.reload();"><span
+                    class="badge bg-secondary"><img src="se.png" alt="search" width="20"
+                        height="24"></span>Refresh</button>
+        </div>
+    </nav>
+
+    <!-- TYPO -->
+    <div class="container px-4 py-5" id="custom-cards">
+        <div class="d-flex1">
+            <div class="d-block me-auto flex-row-reverse" id="pad">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 ps-1 p-0" type="search" placeholder="Search Your City" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="d-block ">
+                <h2 class="pb-2 d-inline-block">Agra, Uttar Pradesh</h2><br>
+                <p class="m-0">27'10'36'N & 78'0'29'E</p>
+            </div>
+            
+        </div>
+        <hr>
+
+        <!-- Cards -->
+        <div class="d-flex">
+            <!-- INFO -->
+            <div>
+
+                <div class="card bg-dark-subtle border-0 m-2" style="width: 12rem;">
+                    <div class="d-flex  m-0 mt-4 mb-4">
+                        <form action="get">
+                            Select Date: <br>
+                            <input type="date" name="" id="">
+                        </form>
+                    </div>
+                    
+                    <ul class="p-1">
+                        <li class="list-group-item p-1">High Temprature</li>
+                        <li class="list-group-item p-1">Low Temprature</li>
+                        <li class="list-group-item p-1">Humidity</li>
+                        <li class="list-group-item p-1">Sunrise Time</li>
+                        <li class="list-group-item p-1">Sunset Time</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Sunny -->
+            <div>
+                <h5 class="ps-5">20 Jan 2023</h5>
+                <div class="card bg-dark text-white m-1 " style="width: 13rem;">
+                    <div class="d-flex p-1">
+                        <img src="sun.png" class="d-inline-block p-1 m-0" alt="Sun" height="70px" width="70px"
+                            style="filter: invert(100%);">
+                        <p class="d-inline-block m-3 fs-4">Sunny</p>
+                    </div>
+
+                    <ul>
+                        <li class="list-group-item p-1 text-center">23°/63°</li>
+                        <li class="list-group-item p-1 text-center">17°/43°F</li>
+                        <li class="list-group-item p-1 text-center">76%</li>
+                        <li class="list-group-item p-1 text-center">06:21 AM</li>
+                        <li class="list-group-item p-1 text-center">05:93 AM</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Snowy -->
+            <div>
+                <h5 class="ps-5">21 Jan 2023</h5>
+                <div class="card bg-dark text-white m-1" style="width: 13rem;">
+                    <div class="d-flex p-1">
+                        <img src="snow.png" class="d-inline-block p-1 m-0" alt="Sun" height="70px" width="70px"
+                            style="filter: invert(100%);">
+                        <p class="d-inline-block m-3 fs-4">Snowy</p>
+                    </div>
+
+                    <ul>
+                        <li class="list-group-item p-1 text-center">23°/63°</li>
+                        <li class="list-group-item p-1 text-center">17°/43°F</li>
+                        <li class="list-group-item p-1 text-center">76%</li>
+                        <li class="list-group-item p-1 text-center">06:21 AM</li>
+                        <li class="list-group-item p-1 text-center">05:93 AM</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Rainy -->
+            <div>
+                <h5 class="ps-5">22 Jan 2023</h5>
+                <div class="card bg-dark text-white m-1" style="width: 13rem;">
+                    <div class="d-flex p-1">
+                        <img src="rain.png" class="d-inline-block p-1 m-0" alt="Sun" height="70px" width="70px"
+                            style="filter: invert(100%);">
+                        <p class="d-inline-block m-3 fs-4">Rainy</p>
+                    </div>
+
+                    <ul>
+                        <li class="list-group-item p-1 text-center">23°/63°</li>
+                        <li class="list-group-item p-1 text-center">17°/43°F</li>
+                        <li class="list-group-item p-1 text-center">76%</li>
+                        <li class="list-group-item p-1 text-center">06:21 AM</li>
+                        <li class="list-group-item p-1 text-center">05:93 AM</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Windy -->
+            <div>
+                <h5 class="ps-5">23 Jan 2023</h5>
+                <div class="card bg-dark text-white m-1" style="width: 13rem;">
+                    <div class="d-flex p-1">
+                        <img src="wind.png" class="d-inline-block p-1 m-0" alt="Sun" height="70px" width="70px"
+                            style="filter: invert(100%);">
+                        <p class="d-inline-block m-3 fs-4">Windy</p>
+                    </div>
+
+                    <ul>
+                        <li class="list-group-item p-1 text-center">23°/63°</li>
+                        <li class="list-group-item p-1 text-center">17°/43°F</li>
+                        <li class="list-group-item p-1 text-center">76%</li>
+                        <li class="list-group-item p-1 text-center">06:21 AM</li>
+                        <li class="list-group-item p-1 text-center">05:93 AM</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Rainy -->
+            <div>
+                <h5 class="ps-5">24 Jan 2023</h5>
+                <div class="card bg-dark text-white m-1" style="width: 13rem;">
+                    <div class="d-flex p-1">
+                        <img src="rain.png" class="d-inline-block p-1 m-0" alt="Sun" height="70px" width="70px"
+                            style="filter: invert(100%);">
+                        <p class="d-inline-block mb-3 fs-4">Rainy</p>
+                    </div>
+
+                    <ul>
+                        <li class="list-group-item p-1 text-center">23°/63°</li>
+                        <li class="list-group-item p-1 text-center">17°/43°F</li>
+                        <li class="list-group-item p-1 text-center">76%</li>
+                        <li class="list-group-item p-1 text-center">06:21 AM</li>
+                        <li class="list-group-item p-1 text-center">05:93 AM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Import Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

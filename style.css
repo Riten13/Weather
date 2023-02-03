@@ -1,0 +1,22 @@
+.riten-nav{
+    padding-right: 100px;
+}
+.d-flex1{
+    display: flex;
+}
+ul{
+    padding: 0;
+}
+@media only screen and (max-width: 1000px){
+    .riten-nav{
+        padding-right: 0px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .d-flex1{
+        display: block;
+    }
+    #pad{
+        margin: 10px;
+    }
+  }
